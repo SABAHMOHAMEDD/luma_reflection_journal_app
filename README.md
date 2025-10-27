@@ -8,7 +8,8 @@ A minimalist journaling app designed to promote calmness, self-awareness, and em
 <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/9d8cf189-d41c-4347-b6a2-3dc81986d23c" />
 <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/f9cb5ccc-3234-465e-88a1-b14856b296f4" />
 <img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/ee0ef1f9-675f-4e49-9b64-8250eb735d12" />
-<img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/c9b07b2e-9792-40d5-927e-c92a886f0317" />
+<img width="200" height="800" alt="image" src="https://github.com/user-attachments/assets/c3511315-1c71-4ee7-b678-7a2747181c3d" />
+
 
 
 
