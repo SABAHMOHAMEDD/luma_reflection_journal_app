@@ -1,0 +1,80 @@
+
+# Luma - mood & reflection journal app
+A minimalist, aesthetic mood & reflection journal app called Reflex, designed to promote calmness and emotional clarity.
+The interface should feel soft, relaxing, and poetic, with gentle gradients, rounded cards, and smooth animations.
+
+
+# Main visual concept:
+The user can change the background — each background is a beautiful calm scene (not just color) like:
+	•	soft floral backgrounds (pale roses, lavender fields)
+	•	pastel skies (sunset, dawn, clouds)
+	•	cozy indoor vibes (warm lights, notebooks, candles)
+	•	nature tones (sand dunes, ocean waves, mountain mist)
+
+The journaling screen should have:
+	•	a large text area for writing daily thoughts
+	•	a mood picker (with gentle emojis or icons representing moods)
+	•	a date bar and a floating “Add Entry” button
+
+Typography: clean and elegant (e.g., Nunito, Poppins, or Inter).
+Colors: muted pastels (cream, beige, blush pink, dusty blue).
+Theme: Light and Dark modes both soft — dark mode with deep purples or navy blues, not harsh black.
+
+Extra ideas:
+	•	Gentle fade animations when switching backgrounds.
+	•	Small floating elements (like sparkles, petals, or soft glow).
+	•	A weekly summary card showing “This week’s mood” with icons and smooth charts.
+
+Overall feel: a calm, mindful, feminine journaling experience.
+
+
+
+# User Flow
+- Launch → Welcome / short onboarding
+- Home → Recent entries list + “Add” button
+- Add Entry → Text + mood (5 icons) + optional photos/attachments
+- Entry Detail → View / edit / delete / export PDF
+- Weekly Summary → Simple chart + common keywords
+- Settings → Theme, reminders, export data
+
+
+# Main Screens
+- Splash / Onboarding
+- Home (animated list)
+- Entry Editor (simple rich text or textarea)
+- Entry Detail
+- Summary / Analytics (small pie or line chart)
+- Settings
+
+# Architecture (Clean)
+ lib/core/ → errors, utils, constants, theme  
+ lib/features/reflex/domain/ → entities, repositories (abstract), usecases  
+ lib/features/reflex/data/ → models, local_data_source (Hive/Drift), repository_impl  
+ lib/features/reflex/presentation/ → blocs, screens, widgets, animations  
+ lib/main.dart → dependency injection  
+
+
+# State Management
+- Bloc (Bloc + Cubit for small UI states)
+
+
+# Storage
+- Hive (lightweight) or Drift (SQL-like queries)
+- Schema: Entry { id, text, mood:int, date, attachments[] }
+
+
+# Core Topics
+- Theming (light/dark + mood-based dynamic theme)
+- Routing (GoRouter + deep linking)
+- Local storage (Hive/Drift + migrations)
+- Animations (Hero, implicit, custom transitions)
+- Notifications (local reminders)
+- Export PDF (package: printing)
+- Unit & widget tests
+
+
+# Milestones
+- Basic CRUD (domain + data + minimal UI)
+- Theming + navigation (GoRouter)
+- Animations + local notifications
+- Weekly summary + PDF export
